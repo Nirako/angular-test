@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+<head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <title>.:Lecture 5:.</title>
+</head>
+<body>
+  <h1>My first angularJS Application</h1>
+  <div ng-controller="MyFirstController">
+    {{name}} - {{time}}
+    <br/>
+    <input type="text" ng-model="name"/>
+    <br/>
+    {{person.familyName}} / {{person.name}} / {{person.age}} / {{person.birthDate}}
+    <br/>
+    <label>Family name</label><input type="text" ng-model="person.familyName"/>
+    <label>Name</label><input type="text" ng-model="person.name"/>
+    <label>Age</label><input type="text" ng-model="person.age"/>
+    <label>Birth date</label><input type="text" ng-model="person.birthDate"/>
+  </div>
+</body>
+</html>
