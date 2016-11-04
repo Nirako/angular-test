@@ -59,14 +59,7 @@
     }
   }
 
-  function ProductProvider() {
-    var provider = this;
-
-    provider.$get = function() {
-      return new ProductService();
-    };
-  }
-
+// FILTER FUNCTION
   function reverseNumberFilter() {
     return function(input) {
           var reverse = '';
