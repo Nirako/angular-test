@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>AngularJS Provider</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app="ProviderApp">
+    <!-- Formulaire d'ajout-->
+    <div ng-controller="AddProduct as aP">
+      <label>Produit</labe><input type="text" ng-model="aP.product.product"/><br/>
+        <label>Prix</labe><input type="text" ng-model="aP.product.price"/><br/>
+        <button ng-click="aP.buy()">Acheter</button>
+    </div>
+    <!-- Listening-->
+    <div ng-controller="ShowProduct as sP">
+        <ul ng-repeat="item in sP.getItemsList()">
+            <li>{{$index+1}} : {{item.product}} - {{item.price}}</li>
+        </ul>
+    </div>
+</body>
+</html>
