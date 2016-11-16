@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>AngularJS Provider</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app="HttpApp">
+  <div ng-controller="controllerApp as cA">
+    <ul>
+      <li ng-repeat="personne in cA.listPersonne">
+        <!-- {{personne.ID}} : {{personne.Nom}} / {{personne.Prenom}} -->
+        {{personne.id}} : {{personne.name}}
+      </li>
+    </ul>
+
+  </div>
+</body>
+</html>
